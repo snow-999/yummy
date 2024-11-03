@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon" />
+
+    <!-- ~Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- #Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ^Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- !CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-theme="dark" class="position-relative">
+    <!-- ! <loading> -->
+
+    <div id="loading" class="justify-content-center align-items-center bg-body">
+      <main id="container">
+        <div class="dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <div class="dots2">
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+          <div class="dot2"></div>
+        </div>
+        <div class="circle"></div>
+      </main>
+    </div>
+
+    <!-- ! </loading> -->
+
+    <!-- @<side-nav> -->
+
+    <div class="side-nav">
+      <div class="side-nav-inner p-3 bg-body-tertiary position-relative">
+        <div class="profile mb-5 text-center">
+          <h1>Yummy</h1>
+        </div>
+
+        <ul class="list-unstyled mb-0 overflow-hidden">
+          <li id="searchLink" class="rounded-2 py-2 mb-2">
+            <i class="fa-solid fa-magnifying-glass me-3"></i
+            ><span class="fs-5">Search</span>
+          </li>
+
+          <li id="categoriesLink" class="rounded-2 py-2 mb-2">
+            <i class="fa-solid fa-layer-group me-3"></i
+            ><span class="fs-5">Categories</span>
+          </li>
+
+          <li id="areaLink" class="rounded-2 py-2 mb-2">
+            <i class="fa-solid fa-earth-americas me-3"></i
+            ><span class="fs-5">Area</span>
+          </li>
+
+          <li id="ingredientsLink" class="rounded-2 py-2">
+            <i class="fa-solid fa-burger me-3"></i
+            ><span class="fs-5">Ingredients</span>
+          </li>
+
+          <li id="contactUs" class="rounded-2 py-2">
+            <i class="fa-solid fa-share-nodes me-3"></i
+            ><span class="fs-5">Contact us</span>
+          </li>
+
+          <li id="theme" class="rounded-2 py-2">
+            <i class="fa-solid fa-circle-half-stroke me-3"></i
+            ><span class="fs-5">theme: Dark</span>
+          </li>
+        </ul>
+
+        <div class="nav-footer position-absolute bottom-0 mb-3">
+          <div class="icons">
+            <i class="fa-brands fa-facebook me-1"></i>
+            <i class="fa-brands fa-x-twitter me-1"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu" class="rounded-end-4 bg-body-secondary">
+        <img id="menuLogo" src="Assets/logo.png" alt="logo" />
+        <i id="openIcon" class="menuIcon fa-solid fa-bars fa-2x"></i>
+        <i id="closeIcon" class="menuIcon fa-solid fa-xmark fa-2x"></i>
+        <div id="contactIcon" class="text-center fs-5">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- @</side-nav> -->
+
+    <!-- *<cover> -->
+
+    <header id="cover">
+      <div id="backgroundImg"></div>
+      <img id="logo" src="Assets/logo.png" alt="logo" />
+      <h1>Yummy</h1>
+      <p>
+        Discover Deliciousness with
+        <span class="main-color fw-semibold">Yummy</span> Recipes!
+      </p>
+    </header>
+
+    <!-- *</cover> -->
+
+    <!-- !<home> -->
+
+    <section id="home">
+      <div class="container-lg p-5">
+        <div id="data" class="row g-3"></div>
+      </div>
+    </section>
+
+    <!-- !</home> -->
+
+    <!-- ~<search> -->
+
+    <section
+      id="search"
+      class="overflow-auto bg-body-tertiary rounded-3 shadow p-5 overflow-auto"
+    >
+      <i
+        id="closeSearch"
+        class="fa-solid fa-xmark p-3 rounded-3 shadow text-dark fs-5"
+      ></i>
+      <div class="container-lg p-4">
+        <div id="searchInputs" class="row g-3">
+          <div id="searchByName" class="col-md-6">
+            <div class="input-container">
+              <input
+                placeholder="Search By Name"
+                id="name"
+                type="text"
+                onkeyup="searchByName(this.value)"
+              />
+              <label for="name" class="input-label">Search By Name</label>
+              <span class="input-highlight"></span>
+            </div>
+          </div>
+
+          <div id="searchByFLetter" class="col-md-6">
+            <div class="input-container">
+              <input
+                placeholder="Search By First Letter"
+                id="fLetter"
+                type="text"
+                maxlength="1"
+                onkeyup="searchByFLetter(this.value)"
+              />
+              <label for="fLetter" class="input-label"
+                >Search By First Letter</label
+              >
+              <span class="input-highlight"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ~</search> -->
+
+    <!-- #<categories> -->
+
+    <section
+      id="categories"
+      class="overflow-auto bg-body-tertiary rounded-3 shadow p-5 overflow-auto"
+    >
+      <i
+        id="closeCategories"
+        class="fa-solid fa-xmark p-3 rounded-3 shadow text-dark fs-5"
+      ></i>
+      <div class="container-lg p-5">
+        <div id="categoriesList" class="row g-3"></div>
+      </div>
+    </section>
+
+    <!-- #</categories> -->
+
+    <!-- |<area> -->
+
+    <section
+      id="area"
+      class="overflow-auto bg-body-tertiary rounded-3 shadow p-5 overflow-auto"
+    >
+      <i
+        id="closeArea"
+        class="fa-solid fa-xmark p-3 rounded-3 shadow text-dark fs-5"
+      ></i>
+      <div class="container-lg p-5">
+        <div id="areaList" class="row g-3"></div>
+      </div>
+    </section>
+
+    <!-- |</area> -->
+
+    <!-- ,<ingredients> -->
+
+    <section
+      id="ingredients"
+      class="overflow-auto bg-body-tertiary rounded-3 shadow p-5 overflow-auto"
+    >
+      <i
+        id="closeIngredients"
+        class="fa-solid fa-xmark p-3 rounded-3 shadow text-dark fs-5"
+      ></i>
+      <div class="container-lg p-5">
+        <div id="ingredientsList" class="row g-3"></div>
+      </div>
+    </section>
+
+    <!-- ,</ingredients> -->
+
+    <!-- @<contact-Us> -->
+
+    <section
+      id="contact"
+      class="overflow-auto bg-body-tertiary rounded-3 shadow p-5 overflow-auto text-center"
+    >
+      <i
+        id="closeContact"
+        class="fa-solid fa-xmark p-3 rounded-3 shadow text-dark fs-5"
+      ></i>
+      <div class="container-lg p-4">
+        <form id="contactInputs" class="row">
+          <div class="col-md-6">
+            <div class="input-container">
+              <input placeholder="Enter Your Name" id="uName" type="text" />
+              <label for="uName" class="input-label">Enter Your Name</label>
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="nameWarning" class="alert alert-warning">
+              Special characters and numbers not allowed
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-container">
+              <input placeholder="Enter Your Email" id="email" type="email" />
+              <label for="email" class="input-label">Enter Your Email</label>
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="emailWarning" class="alert alert-warning">
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-container">
+              <input placeholder="Enter Your Phone" id="phone" type="tel" />
+              <label for="phone" class="input-label">Enter Your Phone</label>
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="phoneWarning" class="alert alert-warning">
+              Enter valid Phone Number
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-container">
+              <input placeholder="Enter Your Age" id="age" type="number" />
+              <label for="age" class="input-label">Enter Your Age</label>
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="ageWarning" class="alert alert-warning">
+              Enter valid age
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-container">
+              <input
+                placeholder="Enter Your Password"
+                id="password"
+                type="password"
+              />
+              <label for="password" class="input-label"
+                >Enter Your Password</label
+              >
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="passwordWarning" class="alert alert-warning">
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="input-container">
+              <input
+                placeholder="Repeat Your Password"
+                id="rePassword"
+                type="password"
+              />
+              <label for="rePassword" class="input-label"
+                >Repeat Your Password</label
+              >
+              <span class="input-highlight"></span>
+            </div>
+
+            <div id="rePasswordWarning" class="alert alert-warning">
+              Enter valid repassword
+            </div>
+          </div>
+        </form>
+        <button
+          id="submitBtn"
+          class="btn btn-outline-warning px-5 mt-5 disabled"
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <!-- @</contact-Us> -->
+
+    <!-- &<details> -->
+
+    <section id="mealDetails" class="overflow-auto"></section>
+
+    <!-- &</details> -->
+
+    <!-- ,<====================================================================================================> -->
+
+    <!-- ~<js> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ~</js> -->
+
+    <!-- ?<jQuery> -->
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- ?</jQuery> -->
+
+    <!-- ^<main.js> -->
+
+    <script src="main.js"></script>
+
+    <!-- ^</main.js> -->
+  </body>
+</html>
